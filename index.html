@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olivers tools</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="particle-layer" aria-hidden="true">
+        <span class="particle white"></span>
+        <span class="particle purple"></span>
+        <span class="particle white"></span>
+        <span class="particle purple"></span>
+        <span class="particle white"></span>
+        <span class="particle purple"></span>
+        <span class="particle white"></span>
+        <span class="particle purple"></span>
+        <span class="particle white"></span>
+        <span class="particle purple"></span>
+    </div>
+
+    <div class="app-shell">
+        <header class="top-bar">
+            <span class="top-bar-title">olivers tools</span>
+            <button class="top-bar-open-blank" id="openBlankBtn" type="button">Open in about:blank</button>
+        </header>
+
+        <main class="app-main">
+            <h1 class="tools-text">tools</h1>
+            <h3 class="arch-text">site is in early beta please lmk about any bugs (also dont spam the buttons)</h3>
+
+            <section class="glass-panel">
+                <div class="button-row">
+                    <button class="outline-button" data-description="Artificial Intelligence">TuffTerminal</button>
+                    <button class="outline-button" data-description="Web Console">WebConsole</button>
+                    <button class="outline-button" data-description="Web pr0xy">pr0xy (buggy)</button>
+                    <button class="outline-button" data-description="Button 4">4</button>
+                </div>
+                <div class="button-row">
+                    <button class="outline-button" data-description="Button 5">5</button>
+                    <button class="outline-button" data-description="Button 6">6</button>
+                    <button class="outline-button" data-description="Button 7">7</button>
+                    <button class="outline-button" data-description="Button 8">8</button>
+                </div>
+            </section>
+
+            <section class="glass-panel transparent-panel">
+            </section>
+        </main>
+    </div>
+
+    <div class="tooltip-panel" id="tooltipPanel">
+        <span class="tooltip-text" id="tooltipText"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
