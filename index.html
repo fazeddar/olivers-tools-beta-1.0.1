@@ -20,6 +20,12 @@
         <span class="particle purple"></span>
     </div>
 
+    <aside class="side-menu" id="sideMenu" aria-label="Main menu">
+        <h2 class="side-menu-title">Menu</h2>
+        <button class="side-menu-button" id="settingsMenuBtn" type="button">Settings</button>
+        <button class="side-menu-button" type="button">Support</button>
+    </aside>
+
     <div class="app-shell">
         <header class="top-bar">
             <span class="top-bar-title">olivers tools</span>
@@ -28,8 +34,7 @@
 
         <main class="app-main">
             <h1 class="tools-text">tools</h1>
-            <h3 class="arch-text">Beta v1.01 new domain l1nks and s3tt1ngs page coming hopefully today.
-            STOP GETTING MY SITE BLOCKED USE ABOUT:BLANK I HATE BUYING NEW DOMAINS</h3>
+            <h3 class="arch-text">small little overhaul to the site >added settings thats about it i was short on time today</h3>
 
             <section class="glass-panel">
                 <div class="button-row">
@@ -53,6 +58,28 @@
 
     <div class="tooltip-panel" id="tooltipPanel">
         <span class="tooltip-text" id="tooltipText"></span>
+    </div>
+
+    <div class="settings-overlay" id="settingsOverlay" aria-hidden="true">
+        <div class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settingsPanelTitle">
+            <button class="settings-close" id="settingsCloseBtn" type="button" aria-label="Close settings">Close</button>
+            <div class="settings-view is-active" id="settingsMainView">
+                <h2 class="settings-title" id="settingsPanelTitle">Settings</h2>
+                <div class="settings-button-row">
+                    <button class="settings-action-button" id="settingsOpenBlankBtn" type="button" data-description="Open this app inside about:blank">Open in about:blank</button>
+                    <button class="settings-action-button" id="settingsAppearanceBtn" type="button" data-description="change this sites appearence">Appearance</button>
+                    <button class="settings-action-button" id="settingsPrivacyBtn" type="button" data-description="View privacy options">Privacy</button>
+                </div>
+            </div>
+
+            <div class="settings-view" id="appearanceView" aria-hidden="true">
+                <div class="settings-view-header">
+                    <button class="settings-back" id="appearanceBackBtn" type="button">Back</button>
+                </div>
+                <h2 class="settings-title">Appearance</h2>
+                <p class="settings-view-text">coming soon...</p>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
